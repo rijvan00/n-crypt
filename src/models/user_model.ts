@@ -16,7 +16,6 @@ const userSchema = new Schema<IUser>({
   password:{
     type: String,
     required: [true, "Please enter your password"],
-    minlength: [8, "Your password must be longer than 8 characters"],
     select: false,
   },
   avatar: {
